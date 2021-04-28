@@ -11,7 +11,7 @@ class RadioTest {
         Radio radio = new Radio();
     }
 
-    @Test
+    @Test // Тестируем громкость максимум и минимум
     public void shouldInitFieldToZeroTenVolume() {
         Radio radio = new Radio();
 
@@ -19,19 +19,11 @@ class RadioTest {
         assertEquals(10, radio.maxVolume);
         assertEquals(0, radio.minVolume);
         assertEquals(5, radio.currentVolume);
-        radio.currentVolume = 5;
-        assertFalse(radio.on);
+        radio.currentVolume = 3;
     }
 
-    // Спрятан по причине NPE
-    @Test
-    @Disabled
-    public void shouldThrowNPE() {
-        Radio radio = new Radio();
-        assertEquals(0, radio.name.length());
-    }
 
-    @Test
+    @Test //Тестируем радио канал от 1 до 9
     public void shouldInitFieldTo() {
         Radio radio = new Radio();
 
