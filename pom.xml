@@ -74,13 +74,25 @@
                 <configuration>
                     <rules>
                         <rule>
+                            <element>BUNDLE</element>
                             <limits>
                                 <limit>
-                                    <counter>BRANCH</counter>
+                                    <counter>INSTRUCTION</counter>
                                     <value>COVEREDRATIO</value>
+                                    <minimum>90%</minimum>
+                                </limit>
+                                <limit>
+                                    <counter>CLASS</counter>
+                                    <value>MISSEDCOUNT</value>
                                     <maximum>100%</maximum>
                                 </limit>
                             </limits>
+                        </rule>
+                        <rule>
+                            <element>CLASS</element>
+                            <excludes>
+                                <exclude>*Test</exclude>
+                            </excludes>
                         </rule>
                     </rules>
                 </configuration>
