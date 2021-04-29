@@ -5,11 +5,11 @@ public class Radio {
 
     int maxRadioChannel; //Максимальный радиоканал
     int minRadioChannel; //Минимальный радиоканал
-    int currentRadioChannel; //Текущий радиоканал
+    int currentRadioChannel; //Текущее положение радиоканала
 
     int maxVolume;  //Максимальный звук
     int minVolume; //Минимальный звук
-    int currentVolume; //Текущий звук
+    int currentVolume; //Текущее положение звука
 
     public int getMaxRadioChannel() {
         return maxRadioChannel;
