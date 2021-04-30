@@ -46,7 +46,7 @@ public class Radio {
         if (currentRadioChannel >= maxRadioChannel) {
             this.currentRadioChannel = minRadioChannel;
         } else {
-            this.currentRadioChannel = currentRadioChannel + 1;
+            this.currentRadioChannel = currentRadioChannel +1;
         }
     }
 

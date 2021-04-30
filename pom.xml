@@ -61,14 +61,14 @@
                                     <element>BUNDLE</element>
                                     <limits>
                                         <limit>
-                                            <counter>INSTRUCTION</counter>
+                                            <counter>BRANCH</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>1.0</minimum>
+                                            <minimum>50%</minimum>
                                         </limit>
                                         <limit>
                                             <counter>CLASS</counter>
                                             <value>MISSEDCOUNT</value>
-                                            <maximum>1.0</maximum>
+                                            <maximum>100%</maximum>
                                         </limit>
                                     </limits>
                                 </rule>
@@ -77,13 +77,6 @@
                                     <excludes>
                                         <exclude>*Test</exclude>
                                     </excludes>
-                                    <limits>
-                                        <limit>
-                                            <counter>LINE</counter>
-                                            <value>COVEREDRATIO</value>
-                                            <minimum>100%</minimum>
-                                        </limit>
-                                    </limits>
                                 </rule>
                             </rules>
                         </configuration>
